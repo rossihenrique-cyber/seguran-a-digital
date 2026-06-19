@@ -8,11 +8,29 @@
 </head>
 <body> <!-- Área visível da página -->
    <main class="caixa">
+    GERADOR DE SENHAS
     <input type="text" placeholder="Senha Gerada" readonly>
     <input type="number" id="quantidade" value="8" min="1">
     <label>
      <input type="checkbox" id="minusculas"cheked>
+     LETRAS minusculas
     </label>
+    <label>
+     <input type="checkbox" id="mausculas"cheked>
+     LETRAS MAUSCULAS
+    </label>
+    <label>
+        <input type="checkbox" id="numeros"cheked>
+        Numeros
+    </label>
+    <label>
+        <input type="checkbox" id="especiais"cheked>
+        Caracteres especiais 
+    </label>
+    <button> gerar senha</button>
+    <button onclick="criarsenha()"> Criar Senha</button>
+    <button onclick="limparsenha()">Limpar Senha</button>
    </main>
+   <script src="script.js"></script>
 </body>
 </html>
